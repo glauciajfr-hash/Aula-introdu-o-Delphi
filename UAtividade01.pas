@@ -11,7 +11,6 @@ type
     btnTexto: TButton;
     edtTexto: TEdit;
     lblTexto: TLabel;
-    btnBotaoTeste: TButton;
     procedure btnTextoClick(Sender: TObject);
   private
     { Private declarations }

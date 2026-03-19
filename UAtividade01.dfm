@@ -35,12 +35,4 @@ object frmAtividade01: TfrmAtividade01
     Height = 38
     TabOrder = 1
   end
-  object btnBotaoTeste: TButton
-    Left = 423
-    Top = 304
-    Width = 193
-    Height = 41
-    Caption = 'Teste'
-    TabOrder = 2
-  end
 end
