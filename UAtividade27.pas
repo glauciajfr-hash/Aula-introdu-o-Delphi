@@ -39,14 +39,15 @@ implementation
 procedure TForm1.BtnMediaClick(Sender: TObject);
 var
 n1, n2, n3, n4, media:Double;
-
+ //nome, mensagem: String;
 begin
    n1:= StrToFloat(EdtN1.text);
    n2:= StrToFloat(EdtN2.text);
     n3:= StrToFloat(EdtN3.text);
      n4:= StrToFloat(EdtN4.text);
      media:= (n1+n2+n3+n4)/4;
-     EdtMedia.text := FloatToStr(Media);
+     EdtMedia.Text := FloatToStr(Media);
+     // mensagem := 'Aluno(a): ' + 'media: ' + FloatToStr(Media)
 
 end;
 

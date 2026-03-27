@@ -14,8 +14,8 @@ object Form1: TForm1
   object LblNome: TLabel
     Left = 24
     Top = 36
-    Width = 65
-    Height = 21
+    Width = 36
+    Height = 17
     Caption = 'Nome'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -27,7 +27,7 @@ object Form1: TForm1
   object LblNota1: TLabel
     Left = 24
     Top = 88
-    Width = 49
+    Width = 40
     Height = 17
     Caption = 'Nota 1'
     Font.Charset = DEFAULT_CHARSET
@@ -119,14 +119,14 @@ object Form1: TForm1
     Left = 120
     Top = 32
     Width = 193
-    Height = 41
+    Height = 25
     TabOrder = 6
   end
   object EdtMensagem: TEdit
     Left = 24
     Top = 216
     Width = 193
-    Height = 65
+    Height = 25
     TabOrder = 7
   end
 end

@@ -32,7 +32,7 @@ procedure TfrmAtividade26.btnIdadeClick(Sender: TObject);
 begin
 var
 nome, mensagem: string;
-idade, somaIdade : Integer;
+
 begin
   nome := edtNome.Text;
 

@@ -14,14 +14,14 @@ object frmAtividade26: TfrmAtividade26
   object lblNome: TLabel
     Left = 32
     Top = 40
-    Width = 57
+    Width = 33
     Height = 15
     Caption = 'Nome'
   end
   object lblIdade: TLabel
     Left = 32
     Top = 120
-    Width = 57
+    Width = 29
     Height = 15
     Caption = 'Idade'
   end
@@ -52,7 +52,7 @@ object frmAtividade26: TfrmAtividade26
     Left = 144
     Top = 280
     Width = 241
-    Height = 65
+    Height = 23
     TabOrder = 3
   end
 end
