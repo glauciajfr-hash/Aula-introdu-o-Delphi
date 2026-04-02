@@ -14,7 +14,7 @@ object formAtividade28: TformAtividade28
   object lblLogin: TLabel
     Left = 112
     Top = 80
-    Width = 113
+    Width = 57
     Height = 25
     Caption = 'Login'
   end
@@ -28,7 +28,7 @@ object formAtividade28: TformAtividade28
   object lblSenha: TLabel
     Left = 48
     Top = 216
-    Width = 65
+    Width = 52
     Height = 25
     Caption = 'Senha'
   end

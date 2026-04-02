@@ -36,8 +36,8 @@ begin
   usuario := edtUsuario.Text;
   senha := (edtSenha.Text);
 
-  if (usuario = 'user01 and senha = 147') then
-  begin
+  if (usuario = 'Ana') and (senha = '741') then
+    begin
    ShowMessage ('Acesso Liberado');
   end
    else
