@@ -11,7 +11,8 @@ uses
   Vcl.Styles,
   UAtividade26 in 'UAtividade26.pas' {frmAtividade26},
   UAtividade27 in 'UAtividade27.pas' {Form1},
-  UAtividade28 in 'UAtividade28.pas' {formAtividade28};
+  UAtividade28 in 'UAtividade28.pas' {formAtividade28},
+  UAtividadeM in 'UAtividadeM.pas' {frmMensagem};
 
 {$R *.res}
 
@@ -27,5 +28,6 @@ begin
   Application.CreateForm(TfrmAtividade26, frmAtividade26);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TformAtividade28, formAtividade28);
+  Application.CreateForm(TfrmMensagem, frmMensagem);
   Application.Run;
 end.
