@@ -10,7 +10,9 @@ type
   TfrmMensagem = class(TForm)
     btnOK: TButton;
     btnCancelar: TButton;
-    Label1: TLabel;
+    lblMensagem: TLabel;
+    edtPaís: TEdit;
+    procedure lblMensagemClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,5 +25,16 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmMensagem.lblMensagemClick(Sender: TObject);
+  var
+    nomePaís : String;
+begin
+   nomePaís := InputBox('Escolha de país',
+   'Digite o nome do país', 'Brasil');
+   ShowMessage('O nome do país escolhido é: ' + nomePaís);
+
+
+end;
 
 end.
