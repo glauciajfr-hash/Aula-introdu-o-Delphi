@@ -15,12 +15,14 @@ type
     btnAtividade3: TButton;
     btnAtividade28: TButton;
     btnAtividade26: TButton;
+    btnMensagem: TButton;
     procedure btnExemplo01Click(Sender: TObject);
     procedure btnAtividade01Click(Sender: TObject);
     procedure btnExemplo02Click(Sender: TObject);
     procedure btnAtividade02Click(Sender: TObject);
     procedure btnAtividade3Click(Sender: TObject);
     procedure btnAtividade28Click(Sender: TObject);
+    procedure btnMensagemClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -67,6 +69,11 @@ end;
 procedure TfrmPrincipal.btnExemplo02Click(Sender: TObject);
 begin
   frmExemplo02.ShowModal;
+end;
+
+procedure TfrmPrincipal.btnMensagemClick(Sender: TObject);
+begin
+  frmMensagem.showModal;
 end;
 
 end.
