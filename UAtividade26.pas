@@ -35,5 +35,5 @@ begin
   idadeAtual := StrToInt(edtIdade.Text);
   idadeDepois := idadeAtual + 25;
   edtMensagem := Caption := edtNome.Text + ('daqui a 25 anos você vai ter') + IntToStr(idadeDepois) + ('anos!')
-end
+end;
 
