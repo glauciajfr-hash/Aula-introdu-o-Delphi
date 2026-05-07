@@ -17,7 +17,6 @@ object frmAtividade47: TfrmAtividade47
     Width = 121
     Height = 33
     TabOrder = 0
-    OnChange = Edit1Change
   end
   object Edit2: TEdit
     Left = 48
@@ -61,5 +60,6 @@ object frmAtividade47: TfrmAtividade47
     Height = 41
     Caption = 'Verificar'
     TabOrder = 6
+    OnClick = Button1Click
   end
 end

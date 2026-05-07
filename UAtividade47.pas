@@ -15,7 +15,7 @@ type
     Edit5: TEdit;
     Edit6: TEdit;
     Button1: TButton;
-    procedure Edit1Change(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,8 +29,7 @@ implementation
 
 {$R *.dfm}
 
-procedure TfrmAtividade47.Edit1Change(Sender: TObject);
-
+procedure TfrmAtividade47.Button1Click(Sender: TObject);
 var
   Edits: array[1..6] of TEdit;
   i, num: Integer;
@@ -68,5 +67,8 @@ end;
 begin
 
 end.
+
+
+
 
 

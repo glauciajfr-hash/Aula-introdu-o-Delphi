@@ -13,8 +13,8 @@ object frmPrincipal: TfrmPrincipal
   WindowState = wsMaximized
   TextHeight = 30
   object btnExemplo01: TButton
-    Left = 23
-    Top = 50
+    Left = 8
+    Top = 8
     Width = 150
     Height = 39
     Caption = 'Exemplo 1'
@@ -22,8 +22,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnExemplo01Click
   end
   object btnExemplo02: TButton
-    Left = 23
-    Top = 112
+    Left = 8
+    Top = 53
     Width = 150
     Height = 41
     Caption = 'Exemplo 2'
@@ -31,24 +31,24 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnExemplo02Click
   end
   object btnAtividade1: TButton
-    Left = 256
-    Top = 50
+    Left = 8
+    Top = 147
     Width = 145
     Height = 39
     Caption = 'Atividade 1'
     TabOrder = 2
   end
   object btnAtividade2: TButton
-    Left = 256
-    Top = 112
+    Left = 8
+    Top = 192
     Width = 145
     Height = 41
     Caption = 'Atividade 2'
     TabOrder = 3
   end
   object btnAtividade3: TButton
-    Left = 256
-    Top = 176
+    Left = 8
+    Top = 239
     Width = 137
     Height = 41
     Caption = 'Atividade 3'
@@ -56,8 +56,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade3Click
   end
   object btnAtividade28: TButton
-    Left = 431
-    Top = 176
+    Left = 183
+    Top = 102
     Width = 150
     Height = 41
     Caption = 'Atividade 28'
@@ -65,24 +65,24 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade28Click
   end
   object btnAtividade26: TButton
-    Left = 431
-    Top = 49
+    Left = 183
+    Top = 8
     Width = 150
     Height = 41
     Caption = 'Atividade 26'
     TabOrder = 6
   end
   object btnMensagem: TButton
-    Left = 232
-    Top = 240
-    Width = 177
+    Left = 8
+    Top = 100
+    Width = 150
     Height = 41
     Caption = 'Mensagem'
     TabOrder = 7
   end
   object btnAtividade43: TButton
-    Left = 23
-    Top = 240
+    Left = 363
+    Top = 8
     Width = 150
     Height = 41
     Caption = 'Atividade 43'
@@ -90,20 +90,47 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade43Click
   end
   object btnAtividade27: TButton
-    Left = 431
-    Top = 112
+    Left = 183
+    Top = 55
     Width = 150
     Height = 41
     Caption = 'Atividade 27'
     TabOrder = 9
   end
   object btnAtividade47: TButton
-    Left = 431
-    Top = 240
+    Left = 363
+    Top = 72
     Width = 150
     Height = 41
     Caption = 'Atividade 47'
     TabOrder = 10
     OnClick = btnAtividade47Click
+  end
+  object btnAtividade48: TButton
+    Left = 363
+    Top = 128
+    Width = 150
+    Height = 41
+    Caption = 'Atividade 48'
+    TabOrder = 11
+    OnClick = btnAtividade48Click
+  end
+  object btnAtividade49: TButton
+    Left = 363
+    Top = 175
+    Width = 150
+    Height = 34
+    Caption = 'Atividade 49'
+    TabOrder = 12
+    OnClick = btnAtividade49Click
+  end
+  object btnAtividade50: TButton
+    Left = 363
+    Top = 224
+    Width = 150
+    Height = 33
+    Caption = 'Atividade 50'
+    TabOrder = 13
+    OnClick = btnAtividade50Click
   end
 end
