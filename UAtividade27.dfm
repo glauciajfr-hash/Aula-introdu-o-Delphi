@@ -1,7 +1,7 @@
-object Form1: TForm1
+object frmAtividade27: TfrmAtividade27
   Left = 0
   Top = 0
-  Caption = 'Atividade27'
+  Caption = 'Atividade 27'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -121,12 +121,5 @@ object Form1: TForm1
     Width = 193
     Height = 25
     TabOrder = 6
-  end
-  object EdtMensagem: TEdit
-    Left = 24
-    Top = 216
-    Width = 193
-    Height = 25
-    TabOrder = 7
   end
 end

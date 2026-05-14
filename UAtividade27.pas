@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TForm1 = class(TForm)
+  TfrmAtividade27 = class(TForm)
     BtnMedia: TButton;
     LblNome: TLabel;
     LblNota1: TLabel;
@@ -21,7 +21,6 @@ type
     EdtN4: TEdit;
     EdtMedia: TEdit;
     EdtNome: TEdit;
-    EdtMensagem: TEdit;
     procedure BtnMediaClick(Sender: TObject);
   private
     { Private declarations }
@@ -30,24 +29,28 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmAtividade27: TfrmAtividade27;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.BtnMediaClick(Sender: TObject);
+procedure TfrmAtividade27.BtnMediaClick(Sender: TObject);
 var
 n1, n2, n3, n4, media:Double;
- //nome, mensagem: String;
+ nome, mensagem: String;
 begin
    n1:= StrToFloat(EdtN1.text);
    n2:= StrToFloat(EdtN2.text);
     n3:= StrToFloat(EdtN3.text);
      n4:= StrToFloat(EdtN4.text);
+
      media:= (n1+n2+n3+n4)/4;
+
      EdtMedia.Text := FloatToStr(Media);
-     // mensagem := 'Aluno(a): ' + 'media: ' + FloatToStr(Media)
+      mensagem := 'Aluno(a): ' + 'media: ' + FloatToStr(Media);
+
+     ShowMessage(mensagem);
 
 end;
 

@@ -2,8 +2,8 @@ object frmExemplo02: TfrmExemplo02
   Left = 0
   Top = 0
   Caption = 'Exemplo 2'
-  ClientHeight = 78
-  ClientWidth = 322
+  ClientHeight = 171
+  ClientWidth = 394
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,9 +19,9 @@ object frmExemplo02: TfrmExemplo02
     Caption = '+'
   end
   object lbl_resultado: TLabel
-    Left = 247
+    Left = 279
     Top = 27
-    Width = 67
+    Width = 66
     Height = 30
   end
   object edt_vlr_1: TEdit
@@ -39,7 +39,7 @@ object frmExemplo02: TfrmExemplo02
     TabOrder = 1
   end
   object btn_resultado: TButton
-    Left = 200
+    Left = 212
     Top = 30
     Width = 41
     Height = 25
