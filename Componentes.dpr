@@ -11,7 +11,7 @@ uses
   Vcl.Styles,
   UAtividade26 in 'UAtividade26.pas' {frmAtividade26},
   UAtividade27 in 'UAtividade27.pas' {frmAtividade27},
-  UAtividade28 in 'UAtividade28.pas' {formAtividade28},
+  UAtividade28 in 'UAtividade28.pas' {frmAtividade28},
   UAtividadeM in 'UAtividadeM.pas' {frmMensagem},
   UAtividade43 in 'UAtividade43.pas' {frm43},
   UAtividade47 in 'UAtividade47.pas' {frmAtividade47},
@@ -34,7 +34,7 @@ begin
   Application.CreateForm(TfrmAtividade02, frmAtividade02);
   Application.CreateForm(TfrmAtividade26, frmAtividade26);
   Application.CreateForm(TfrmAtividade27, frmAtividade27);
-  Application.CreateForm(TformAtividade28, formAtividade28);
+  Application.CreateForm(TfrmAtividade28, frmAtividade28);
   Application.CreateForm(TfrmMensagem, frmMensagem);
   Application.CreateForm(Tfrm43, frm43);
   Application.CreateForm(TfrmAtividade47, frmAtividade47);

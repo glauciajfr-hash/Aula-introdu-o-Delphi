@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TformAtividade28 = class(TForm)
+  TfrmAtividade28 = class(TForm)
     lblLogin: TLabel;
     edtUsuario: TEdit;
     lblUsuario: TLabel;
@@ -22,13 +22,13 @@ type
   end;
 
 var
-  formAtividade28: TformAtividade28;
+  frmAtividade28: TfrmAtividade28;
 
 implementation
 
 {$R *.dfm}
 
-procedure TformAtividade28.btnAcessarClick(Sender: TObject);
+procedure TfrmAtividade28.btnAcessarClick(Sender: TObject);
 begin
 var
 usuario, senha : String;

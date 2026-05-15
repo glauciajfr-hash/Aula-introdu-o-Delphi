@@ -40,6 +40,7 @@ type
     procedure btnAtividade26Click(Sender: TObject);
     procedure btnMensagemClick(Sender: TObject);
     procedure btnAtividade27Click(Sender: TObject);
+    procedure btnAtividade2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -81,7 +82,12 @@ end;
 
 procedure TfrmPrincipal.btnAtividade28Click(Sender: TObject);
 begin
-formAtividade28.ShowModal
+frmAtividade28.ShowModal
+end;
+
+procedure TfrmPrincipal.btnAtividade2Click(Sender: TObject);
+begin
+frmAtividade02.Showmodal;
 end;
 
 procedure TfrmPrincipal.btnAtividade3Click(Sender: TObject);

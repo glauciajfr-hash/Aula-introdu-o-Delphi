@@ -7,22 +7,22 @@ object frmAtividade26: TfrmAtividade26
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -12
+  Font.Height = -28
   Font.Name = 'Segoe UI'
   Font.Style = []
-  TextHeight = 15
+  TextHeight = 38
   object lblNome: TLabel
     Left = 32
     Top = 40
-    Width = 33
-    Height = 15
+    Width = 76
+    Height = 38
     Caption = 'Nome'
   end
   object lblIdade: TLabel
     Left = 32
     Top = 120
-    Width = 29
-    Height = 15
+    Width = 68
+    Height = 38
     Caption = 'Idade'
   end
   object btnIdade: TButton
@@ -38,21 +38,21 @@ object frmAtividade26: TfrmAtividade26
     Left = 144
     Top = 37
     Width = 121
-    Height = 23
+    Height = 46
     TabOrder = 1
   end
   object edtIdade: TEdit
     Left = 144
     Top = 112
     Width = 121
-    Height = 23
+    Height = 46
     TabOrder = 2
   end
   object edtMensagem: TEdit
     Left = 144
-    Top = 280
-    Width = 241
-    Height = 23
+    Top = 264
+    Width = 289
+    Height = 62
     TabOrder = 3
   end
 end

@@ -155,7 +155,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UAtividade28.pas">
-            <Form>formAtividade28</Form>
+            <Form>frmAtividade28</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UAtividadeM.pas">

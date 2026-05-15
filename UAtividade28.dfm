@@ -1,7 +1,7 @@
-object formAtividade28: TformAtividade28
+object frmAtividade28: TfrmAtividade28
   Left = 0
   Top = 0
-  Caption = 'Atividade28'
+  Caption = 'Atividade 28'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
