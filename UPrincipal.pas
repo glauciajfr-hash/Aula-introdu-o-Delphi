@@ -42,6 +42,7 @@ type
     procedure btnMensagemClick(Sender: TObject);
     procedure btnAtividade27Click(Sender: TObject);
     procedure btnAtividade2Click(Sender: TObject);
+    procedure btncadastroClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -57,7 +58,7 @@ implementation
 
 uses UExemplo01, UAtividade01, UExemplo02, UAtividade02, UAtividade26,
   UAtividade28, UAtividade47, UAtividade43, UAtividade48, UAtividade49,
-  UAtividade50, UAtividade51, UAtividade52, UAtividade27;
+  UAtividade50, UAtividade51, UAtividade52, UAtividade27, Ucomponentes;
 
 
 
@@ -144,6 +145,11 @@ end;
 procedure TfrmPrincipal.btnAtividade52Click(Sender: TObject);
 begin
 frmAtividade52.ShowModal;
+end;
+
+procedure TfrmPrincipal.btncadastroClick(Sender: TObject);
+begin
+frmCadastro.ShowModal;
 end;
 
 end.

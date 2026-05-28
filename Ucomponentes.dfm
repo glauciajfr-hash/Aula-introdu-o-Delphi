@@ -203,6 +203,7 @@
     Font.Style = []
     ParentFont = False
     TabOrder = 6
+    OnClick = btnCadastrarClick
   end
   object btnLimpar: TButton
     Left = 447

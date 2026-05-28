@@ -162,5 +162,6 @@ object frmPrincipal: TfrmPrincipal
     Height = 34
     Caption = 'Atividade 53'
     TabOrder = 16
+    OnClick = btncadastroClick
   end
 end
