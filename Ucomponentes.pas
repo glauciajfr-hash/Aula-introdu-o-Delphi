@@ -140,8 +140,8 @@ begin
 
   edtNome.SetFocus;
 
-      mmoRegistros.Clear;
   nRegistro := 0;
+  mmoRegistros.'';
 end;
 
 end.
