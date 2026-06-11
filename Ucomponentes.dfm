@@ -10,6 +10,7 @@
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  OnShow = FormShow
   TextHeight = 13
   object lblNome: TLabel
     Left = 32
@@ -165,12 +166,12 @@
       Caption = 'Melancia'
       TabOrder = 4
     end
-    object ccbManga: TCheckBox
+    object ccbPera: TCheckBox
       Left = 128
       Top = 93
       Width = 97
       Height = 25
-      Caption = 'Manga'
+      Caption = 'Pera'
       TabOrder = 5
     end
   end
@@ -218,5 +219,6 @@
     Font.Style = []
     ParentFont = False
     TabOrder = 7
+    OnClick = btnLimparClick
   end
 end

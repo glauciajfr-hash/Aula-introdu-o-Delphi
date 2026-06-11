@@ -3,7 +3,8 @@ unit Ucomponentes;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
@@ -11,6 +12,7 @@ type
     edtNome: TEdit;
     edtEndereco: TEdit;
     lblNome: TLabel;
+    lblEndereço: TLabel;
     gpbSexo: TGroupBox;
     rbtMasc: TRadioButton;
     rbtFem: TRadioButton;
@@ -21,15 +23,16 @@ type
     ccbUva: TCheckBox;
     ccbMorango: TCheckBox;
     ccbMelancia: TCheckBox;
-    ccbManga: TCheckBox;
+    ccbPera: TCheckBox;
     mmoRegistros: TMemo;
     btnCadastrar: TButton;
     btnLimpar: TButton;
     procedure btnCadastrarClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure btnLimparClick(Sender: TObject);
   private
     { Private declarations }
-    nRegistro : Integer;
-
+    nRegistros: Integer;
   public
     { Public declarations }
   end;
@@ -41,107 +44,126 @@ implementation
 
 {$R *.dfm}
 
-
 procedure TfrmCadastro.btnCadastrarClick(Sender: TObject);
 var
-  Sexo : String;
-  Frutas : String;
+  nome, endereco, sexo, cidade, frutas, cadastro, erros: String;
+  validacao: Boolean;
 begin
+  validacao := true;
+  erros := '';
 
-
-  if Trim(edtNome.Text) = '' then
+  if edtNome.Text = '' then
   begin
-    ShowMessage('Campo Nome não preenchido');
-    edtNome.SetFocus;
-    Exit;
+    validacao := false;
+    erros := erros + '- Digite o nome para realizar o cadastro' + sLineBreak;
+  end
+  else
+  begin
+    nome := edtNome.Text;
   end;
 
-  if Trim(edtEndereco.Text) = '' then
+  if edtEndereco.Text = '' then
   begin
-    ShowMessage('Campo Endereço não preenchido');
-    edtEndereco.SetFocus;
-    Exit;
+    validacao := false;
+    erros := erros + '- Digite o endereço para realizar o cadastro' +
+      sLineBreak;
+  end
+  else
+  begin
+    endereco := edtEndereco.Text;
   end;
 
-  if (not rbtMasc.Checked) and (not rbtFem.Checked) then
+  // sexo
+  sexo := 'Indefinido';
+  if rbtMasc.Checked = true then
   begin
-    ShowMessage('Selecione o sexo');
-    Exit;
+    sexo := 'Masculino';
+  end;
+  if rbtFem.Checked = true then
+  begin
+    sexo := 'Feminino';
   end;
 
   if cbbCidade.ItemIndex = -1 then
   begin
-    ShowMessage('Selecione uma cidade');
-    cbbCidade.SetFocus;
-    Exit;
+    validacao := false;
+    erros := erros + '- Escolha a cidade para realizar o cadastro' + sLineBreak;
+  end
+  else
+  begin
+    cidade := cbbCidade.Items[cbbCidade.ItemIndex];
   end;
 
+  // Frutas
+  frutas := '';
+  if ccbMaca.Checked = true then
+  begin
+    frutas := frutas + 'Maçã' + sLineBreak;
+  end;
+  if ccbBanana.Checked = true then
+  begin
+    frutas := frutas + 'Banana' + sLineBreak;
+  end;
+  if ccbUva.Checked = true then
+  begin
+    frutas := frutas + 'Uva' + sLineBreak;
+  end;
+  if ccbMorango.Checked = true then
+  begin
+    frutas := frutas + 'Morango' + sLineBreak;
+  end;
+  if ccbMelancia.Checked = true then
+  begin
+    frutas := frutas + 'Melancia' + sLineBreak;
+  end;
+  if ccbPera.Checked = true then
+  begin
+    frutas := frutas + 'Pera' + sLineBreak;
+  end;
 
-  if rbtMasc.Checked then
-    Sexo := 'Masculino'
+  if frutas = '' then
+  begin
+    frutas := 'Nenhuma fruta selecionada';
+  end;
+
+  if validacao = true then
+  begin
+    Inc(nRegistros);
+    cadastro := 'Registro nº ' + IntToStr(nRegistros) + sLineBreak + 'Nome: ' + nome + sLineBreak +
+      'Endereço: ' + endereco + sLineBreak + 'Sexo: ' + sexo + sLineBreak +
+      'Cidade: ' + cidade + sLineBreak + 'Frutas favoritas' + sLineBreak +
+      frutas + sLineBreak;
+
+    edtNome.Clear;
+    edtEndereco.Clear;
+    rbtMasc.Checked := false;
+    rbtFem.Checked := false;
+    cbbCidade.ItemIndex := -1;
+    ccbMaca.Checked := false;
+    ccbBanana.Checked := false;
+    ccbUva.Checked := false;
+    ccbMorango.Checked := false;
+    ccbMelancia.Checked := false;
+    ccbPera.Checked := false;
+
+    mmoRegistros.Lines.Add(cadastro);
+  end
   else
-    Sexo := 'Feminino';
+  begin
+    Application.MessageBox(pChar(erros), 'Erro', MB_OK + MB_ICONERROR);
+  end;
 
+end;
 
-  Frutas := '';
+procedure TfrmCadastro.btnLimparClick(Sender: TObject);
+begin
+  mmoRegistros.Clear;
+  nRegistros := 0;
+end;
 
-  if ccbMaca.Checked then
-    Frutas := Frutas + 'Maçã, ';
-
-  if ccbBanana.Checked then
-    Frutas := Frutas + 'Banana, ';
-
-  if ccbUva.Checked then
-    Frutas := Frutas + 'Uva, ';
-
-  if ccbMorango.Checked then
-    Frutas := Frutas + 'Morango, ';
-
-  if ccbMelancia.Checked then
-    Frutas := Frutas + 'Melancia, ';
-
-  if ccbManga.Checked then
-    Frutas := Frutas + 'Manga, ';
-
-
-  if Frutas <> '' then
-    Delete(Frutas, Length(Frutas)-1, 2)
-  else
-    Frutas := 'Nenhuma fruta selecionada';
-
-
-  Inc(nRegistro);
-
-
-  mmoRegistros.Lines.Add('Registro nº ' + IntToStr(nRegistro));
-  mmoRegistros.Lines.Add('Nome: ' + edtNome.Text);
-  mmoRegistros.Lines.Add('Endereço: ' + edtEndereco.Text);
-  mmoRegistros.Lines.Add('Sexo: ' + Sexo);
-  mmoRegistros.Lines.Add('Cidade: ' + cbbCidade.Text);
-  mmoRegistros.Lines.Add('Fruta(s) favorita(s):');
-  mmoRegistros.Lines.Add(Frutas);
-  mmoRegistros.Lines.Add('');
-
-
-  edtNome.Clear;
-  edtEndereco.Clear;
-
-  rbtMasc.Checked := False;
-  rbtFem.Checked := False;
-
-  cbbCidade.ItemIndex := -1;
-
-  ccbMaca.Checked := False;
-  ccbBanana.Checked := False;
-  ccbUva.Checked := False;
-  ccbMorango.Checked := False;
-  ccbMelancia.Checked := False;
-  ccbManga.Checked := False;
-
-  edtNome.SetFocus;
-
-  nRegistro := 0;
-  mmoRegistros.'';
+procedure TfrmCadastro.FormShow(Sender: TObject);
+begin
+  nRegistros := 0;
 end;
 
 end.
