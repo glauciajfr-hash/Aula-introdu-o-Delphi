@@ -6,14 +6,15 @@ object frmAtv_54: TfrmAtv_54
   Margins.Right = 2
   Margins.Bottom = 2
   Caption = 'frmAtv_54'
-  ClientHeight = 312
-  ClientWidth = 708
+  ClientHeight = 224
+  ClientWidth = 648
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -10
   Font.Name = 'Tahoma'
   Font.Style = []
+  OnShow = FormShow
   TextHeight = 12
   object lblNome: TLabel
     Left = 6
@@ -318,5 +319,6 @@ object frmAtv_54: TfrmAtv_54
     Font.Style = []
     ParentFont = False
     TabOrder = 6
+    OnClick = btnLimparDadosClick
   end
 end
