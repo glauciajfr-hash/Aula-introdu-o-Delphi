@@ -148,7 +148,7 @@ begin
   qtdHomens := 0;
   qtdMulheres := 0;
   idadeMais := 0;
-  idadeMenos := 150;
+  idadeMenos := 0;
   somaIdade := 0;
   media := 0;
   lblNmRegistroV.Caption := IntToStr(registros);
