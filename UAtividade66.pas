@@ -46,7 +46,7 @@ begin
   if (UsuarioDigitado = Usuario_Correto) and
   (SenhaDigitada = Senha_Correta) then
   begin
-    Application.MessageBox(pChar('Usuário e Senha corretos!'),
+    Application.MessageBox(pChar('Usuário e Senha liberado!'),
     'Acesso permitido',
   MB_OK + MB_ICONINFORMATION );
   end
